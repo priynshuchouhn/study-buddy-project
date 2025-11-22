@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from werkzeug.utils import secure_filename
 from datetime import datetime
+from dotenv import load_dotenv
 
 # StudyBuddy package imports
 from studybuddy.skill_extractor import (
@@ -15,8 +16,10 @@ from studybuddy.matching import match_partner_smart
 # If you need direct Mistral helpers, use:
 # from studybuddy.mistral_api import generate_quiz, get_explanation
 
+load_dotenv()  # Load environment variables from .env if present
+
 app = Flask(__name__)
-app.secret_key = "your_secret_key"
+app.secret_key = os.getenv("FLASK_SECRET_KEY", "your_secret_key")
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)

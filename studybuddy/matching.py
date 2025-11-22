@@ -19,7 +19,25 @@ SAMPLE_PARTNERS = [
     {"name": "Aarav Mehta", "email": "aarav@cmrit.ac.in", "skills": ["Python", "Flask", "SQL"], "score": 4, "bio": "Backend dev"},
     {"name": "Neha Gupta", "email": "neha@cmrit.ac.in", "skills": ["Data Analysis", "Pandas", "NumPy"], "score": 3, "bio": "Data analyst"},
     {"name": "Rohit Sharma", "email": "rohit@cmrit.ac.in", "skills": ["Machine Learning", "TensorFlow", "PyTorch"], "score": 5, "bio": "ML engineer"},
-    {"name": "Sana Rao", "email": "sana@cmrit.ac.in", "skills": ["React", "HTML", "CSS"], "score": 2, "bio": "Frontend dev"}
+    {"name": "Sana Rao", "email": "sana@cmrit.ac.in", "skills": ["React", "HTML", "CSS"], "score": 2, "bio": "Frontend dev"},
+    {"name": "Kabir Singh", "email": "kabir@cmrit.ac.in", "skills": ["Java", "Spring Boot", "REST"], "score": 4, "bio": "Microservices enthusiast"},
+    {"name": "Isha Verma", "email": "isha@cmrit.ac.in", "skills": ["C++", "Data Structures", "Algorithms"], "score": 5, "bio": "Competitive programmer"},
+    {"name": "Dev Patel", "email": "dev@cmrit.ac.in", "skills": ["AWS", "Docker", "CI/CD"], "score": 4, "bio": "DevOps engineer"},
+    {"name": "Maya Nair", "email": "maya@cmrit.ac.in", "skills": ["Cybersecurity", "Networking", "Linux"], "score": 3, "bio": "Security learner"},
+    {"name": "Anuj Kulkarni", "email": "anuj@cmrit.ac.in", "skills": ["Android", "Kotlin", "Firebase"], "score": 2, "bio": "Mobile app dev"},
+    {"name": "Rhea D'Souza", "email": "rhea@cmrit.ac.in", "skills": ["UI/UX", "Figma", "Accessibility"], "score": 3, "bio": "Design focused"},
+    {"name": "Tanishq Rao", "email": "tanishq@cmrit.ac.in", "skills": ["Go", "Concurrency", "APIs"], "score": 4, "bio": "Systems programmer"},
+    {"name": "Vikram Jain", "email": "vikram@cmrit.ac.in", "skills": ["Rust", "Systems", "WASM"], "score": 5, "bio": "Low-level tinkerer"},
+    {"name": "Bhavya Shah", "email": "bhavya@cmrit.ac.in", "skills": ["Blockchain", "Solidity", "Smart Contracts"], "score": 3, "bio": "Web3 explorer"},
+    {"name": "Simran Kaur", "email": "simran@cmrit.ac.in", "skills": ["Django", "PostgreSQL", "HTML"], "score": 4, "bio": "Fullstack python"},
+    {"name": "Yash Malhotra", "email": "yash@cmrit.ac.in", "skills": ["Data Science", "Scikit-Learn", "Matplotlib"], "score": 3, "bio": "Model builder"},
+    {"name": "Pooja Reddy", "email": "pooja@cmrit.ac.in", "skills": ["TensorFlow", "Computer Vision", "OpenCV"], "score": 5, "bio": "CV specialist"},
+    {"name": "Harshita Agarwal", "email": "harshita@cmrit.ac.in", "skills": ["React", "TypeScript", "Redux"], "score": 3, "bio": "Frontend engineer"},
+    {"name": "Nikhil Bhat", "email": "nikhil@cmrit.ac.in", "skills": ["MongoDB", "Express", "Node.js"], "score": 2, "bio": "Learning MERN stack"},
+    {"name": "Tanvi Deshpande", "email": "tanvi@cmrit.ac.in", "skills": ["Azure", "Kubernetes", "Helm"], "score": 4, "bio": "Cloud native"},
+    {"name": "Pranav Iyer", "email": "pranav@cmrit.ac.in", "skills": ["Game Dev", "Unity", "C#"], "score": 2, "bio": "Indie game dev"},
+    {"name": "Zara Hussain", "email": "zara@cmrit.ac.in", "skills": ["NLP", "Transformers", "SpaCy"], "score": 5, "bio": "Language model enthusiast"},
+    {"name": "Omkar Joshi", "email": "omkar@cmrit.ac.in", "skills": ["Embedded", "C", "Arduino"], "score": 3, "bio": "Hardware hacker"}
 ]
 
 

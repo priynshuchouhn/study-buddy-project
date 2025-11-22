@@ -22,7 +22,10 @@ MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions"
 
 
 def _client_chat(prompt):
-    """Uses mistralai client; falls back to HTTP."""
+    """Uses mistralai client; falls back to HTTP. Requires MISTRAL_API_KEY."""
+    if not MISTRAL_API_KEY:
+        raise ValueError("MISTRAL_API_KEY not set. Create .env with MISTRAL_API_KEY=<your_key> or export it.")
+
     if _HAS_CLIENT and MISTRAL_API_KEY:
         try:
             client = Mistral(api_key=MISTRAL_API_KEY)
