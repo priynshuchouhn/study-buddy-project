@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Quiz</title>
+</head>
+<body>
+
+<h1>Skill Quiz</h1>
+
+<form method="POST">
+    {% for q in questions %}
+        <div style="margin-bottom: 20px;">
+            <strong>Q{{ loop.index }}. {{ q.question }}</strong><br>
+
+            <!-- Added 'required' to all radio inputs for better UX -->
+            <label><input type="radio" name="q{{ loop.index0 }}" value="A" required> A) {{ q.options[0] }}</label><br>
+            <label><input type="radio" name="q{{ loop.index0 }}" value="B" required> B) {{ q.options[1] }}</label><br>
+            <label><input type="radio" name="q{{ loop.index0 }}" value="C" required> C) {{ q.options[2] }}</label><br>
+            <label><input type="radio" name="q{{ loop.index0 }}" value="D" required> D) {{ q.options[3] }}</label><br>
+        </div>
+    {% endfor %}
+
+    <button type="submit">Submit Quiz</button>
+</form>
+
+</body>
+</html>

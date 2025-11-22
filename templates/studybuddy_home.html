@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find StudyBuddy</title>
+    <style>
+        body { font-family: Arial; padding: 40px; text-align:center; }
+        .btn {
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Find Your StudyBuddy</h1>
+<p>Click the button below to match with the best partner based on your quiz performance.</p>
+
+<a 
+class="btn"
+href="{{ url_for('studybuddy_result') }}"
+>
+    Find My Study Partner
+</a>
+
+</body>
+</html>

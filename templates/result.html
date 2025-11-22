@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Quiz Result</title>
+    <style>
+        body { font-family: Arial; padding: 30px; }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            margin: 8px;
+        }
+        .btn-secondary { background-color: #2196F3; }
+        .btn-danger { background-color: #FF5722; }
+    </style>
+</head>
+<body>
+
+<h1>Quiz Completed!</h1>
+
+<h2>Your Score: {{ score }}/{{ total }}</h2>
+<p><strong>Email:</strong> {{ user_email }}</p>
+
+<hr>
+
+<h2>Next Steps</h2>
+
+<a href="{{ url_for('studybuddy_home') }}" class="btn">Find Study Buddy</a>
+
+<a href="{{ url_for('start_quiz_again') }}" class="btn btn-secondary">
+    Try Again
+</a>
+
+<a href="{{ url_for('helper_home') }}" class="btn btn-danger">
+    Project Helper
+</a>
+
+<hr>
+
+<h3>Detailed Analysis</h3>
+
+{% for r in results %}
+    <p>
+    <strong>Q{{ loop.index }}: {{ r.question }}</strong><br>
+    Your Answer: {{ r.user_answer }}<br>
+    Correct Answer: {{ r.correct_answer }}<br>
+    {% if r.is_correct %}
+        <span style="color:green;">✔ Correct</span>
+    {% else %}
+        <span style="color:red;">✖ Incorrect</span>
+    {% endif %}
+    </p>
+{% endfor %}
+
+</body>
+</html>
